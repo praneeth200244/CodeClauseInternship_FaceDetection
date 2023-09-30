@@ -1,0 +1,50 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.application {
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  padding: 0.5rem;
+  display: grid;
+  place-content: center;
+  margin: 0 20%;
+}
+
+.application section {
+  border: 5px solid whitesmoke;
+  border-radius: 5px;
+  padding: 0.45rem;
+  margin: 0.25rem 0;
+  text-align: center;
+}
+
+#detection {
+  position: relative;
+  display: inline-block;
+}
+
+video {
+  max-width: 100%;
+  display: block;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
